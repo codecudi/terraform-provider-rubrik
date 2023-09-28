@@ -114,7 +114,7 @@ func resourceRubrikBootstrapCcesAws() *schema.Resource {
 			"enable_immutability": &schema.Schema{
 				Type:        schema.TypeBool,
 				Optional:    true,
-				Default:     false,
+				Default:     true,
 				Description: "Flag to determine if versioning will be used on the S3 object storage to enable immutability.",
 			},
 			"wait_for_completion": &schema.Schema{
